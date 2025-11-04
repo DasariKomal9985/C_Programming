@@ -139,13 +139,13 @@ int main()
         switch (choice)
         {
         case 1:
-            insertAtSpecificPos(); // Insert at position
+            insertAtBeginning(); // Insert at beginning
             break;
         case 2:
             insertAtEnd(); // Insert at end
             break;
         case 3:
-            insertAtBeginning(); // Insert at beginning
+            insertAtSpecificPos(); // Insert at specific position
             break;
         case 4:
             traverse(); // Display list
