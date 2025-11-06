@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 struct Node
 {
     int data;
@@ -10,14 +11,31 @@ struct Node *head = NULL;
 struct Node *tail = NULL;
 struct Node *temp = NULL;
 struct Node *newnode = NULL;
+int getlength()
+{
+	int count=0;
+	temp=head;
+	do
+	{
+		count++;
+		temp=temp->next;
+	}while(temp!=head);
+	return count;
+}
 void insertatposition()
 {
-    int pos, i = 1;
+    int pos, i = 1 ,length;
     newnode = (struct Node *)malloc(sizeof(struct Node));
     printf("Enter the position to insert the new node: ");
     scanf("%d", &pos);
     printf("Enter the value to be inserted: ");
     scanf("%d", &newnode->data);
+    length=getlength();
+    if(pos<1 || pos>length)
+    {
+    	printf("Invalid position!\n");
+    	return;
+	}
     if (head == NULL) // If list is empty
     {
         head = tail = temp = newnode;
