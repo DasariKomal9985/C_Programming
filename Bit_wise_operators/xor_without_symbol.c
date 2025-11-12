@@ -1,8 +1,6 @@
 /*  XOR operation without using ^ operator 
 
 
-
-
 | A | B | A XOR B |
 | - | - | ------- |
 | 0 | 0 | 0       |
