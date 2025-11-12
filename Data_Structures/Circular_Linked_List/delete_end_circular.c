@@ -25,7 +25,7 @@ void deleteatend()
         free(tail);
         head = NULL;
         tail = NULL;
-    }
+    }  
     else
     {
         while (current->next != tail->next)

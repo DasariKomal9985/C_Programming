@@ -15,7 +15,7 @@ void insert()
         printf("Memory not allocated!\n");
         return;
     }
-    printf("Enter data: ");
+    printf("Enter data: "); 
     scanf("%d", &newnode->data);
     newnode->prev = NULL;
     newnode->next = NULL;
