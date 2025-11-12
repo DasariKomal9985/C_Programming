@@ -46,3 +46,36 @@ int main() {
 
     return 0;
 }
+
+
+
+
+
+
+
+
+
+
+/*
+#include <stdio.h>
+
+int main() {
+    unsigned int a, b;
+
+    printf("Enter first number: ");
+    scanf("%u", &a);
+
+    printf("Enter second number: ");
+    scanf("%u", &b);
+
+    while (b != 0) {
+        unsigned int carry = a & b;   // Common set bits → carry
+        a = a ^ b;                    // Sum bits without carry
+        b = carry << 1;               // Move carry to next bit position
+    }
+
+    printf("\nSum (without using '+') = %u\n", a);
+
+    return 0;
+}
+*/
