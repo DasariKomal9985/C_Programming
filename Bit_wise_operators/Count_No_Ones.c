@@ -1,3 +1,12 @@
+/*  Program to count the number of ones in an integer using bitwise operators. 
+
+Enter a number: 5
+Number of 1s in 5: 2
+
+Enter a number: 15
+Number of 1s in 15: 4
+*/
+
 #include <stdio.h>
 
 int main() {
