@@ -28,3 +28,10 @@ int main() {
 
     return 0;
 }
+
+
+/*for(p=7;p>=0;p--)
+    {
+	if(a&0x01<<p)
+	    c++;
+    }*/
