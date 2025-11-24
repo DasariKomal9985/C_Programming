@@ -1,3 +1,18 @@
+/*
+
+Write a C program to rotate an array by K positions (right rotation) using dynamic memory allocation
+
+number = 5
+known = 2
+array = [1 2 3 4 5]
+
+
+Output will be:
+4 5 1 2 3
+*/
+
+
+
 #include<stdio.h>
 #include<stdlib.h>
 int* rotatorynumber(int number,int known,int* arr);
