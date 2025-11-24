@@ -9,6 +9,21 @@ array = [1 2 3 4 5]
 
 Output will be:
 4 5 1 2 3
+
+
+
+| i | arr[i] | (i+2) % 5 | result index |
+| - | ------ | --------- | ------------ |
+| 0 | 1      | 2         | result[2]    |
+| 1 | 2      | 3         | result[3]    |
+| 2 | 3      | 4         | result[4]    |
+| 3 | 4      | 0         | result[0]    |
+| 4 | 5      | 1         | result[1]    |
+
+
+index:   0 1 2 3 4
+value:   4 5 1 2 3
+
 */
 
 
@@ -39,7 +54,7 @@ int* rotatorynumber(int number,int known,int* arr)
 {
 int i;
 int* result = (int*)malloc(number * sizeof(int));
-known = known % number;
+known = known % number;//storing Quotient value
 for(i=0;i<number;i++)
 {
 result[ (i+known) % number] = arr[i];
