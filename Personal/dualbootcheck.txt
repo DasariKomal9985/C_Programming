@@ -1,0 +1,3 @@
+bcdedit /enum   : check for how many bootloaders are their
+
+bcdedit /set {bootmgr} displaybootmenu no  : to disable any boot loader
