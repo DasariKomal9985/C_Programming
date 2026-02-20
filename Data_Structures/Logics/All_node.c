@@ -214,3 +214,8 @@ int main()
         scanf(" %c",&ch);
     }while(ch!='n');
 }
+
+
+
+
+//oufvidfvhcuvhdkj
