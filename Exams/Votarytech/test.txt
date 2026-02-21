@@ -1,0 +1,11 @@
+1.) what is thread and Process
+2.) what is makefiles
+3.) what is core dump what is the use?
+4.) what is GDB 
+5.) what is valgrind
+6.) what is bsp
+7.) what is DMA explain malloc calloc realloc free
+8.) explain memorylayout and what are store in each code part
+9.) write code for SET CLEAR TOGGLE
+10.) write code for remove dublicate elements from given linked list
+11.) Explain Boot process
