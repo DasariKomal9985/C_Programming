@@ -1,0 +1,36 @@
+PS D:\Visual_Stdio\C_Programming\Makefiles> cd .\Makefile_1Exp\
+PS D:\Visual_Stdio\C_Programming\Makefiles\Makefile_1Exp> ls
+
+
+    Directory: D:\Visual_Stdio\C_Programming\Makefiles\Makefile_1Exp
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        21-02-2026     08:42            132 add.c
+-a----        21-02-2026     08:41           2041 add.o
+-a----        21-02-2026     08:41          45528 final.exe
+-a----        21-02-2026     08:42             90 header.h
+-a----        21-02-2026     08:42            158 hello.c
+-a----        21-02-2026     08:41           2167 hello.o
+-a----        21-02-2026     08:42            239 main.c
+-a----        21-02-2026     08:41           2221 main.o
+-a----        21-02-2026     08:42           2605 Makefile
+
+
+PS D:\Visual_Stdio\C_Programming\Makefiles\Makefile_1Exp> mingw32-make clean 
+del /Q *.o final.exe
+PS D:\Visual_Stdio\C_Programming\Makefiles\Makefile_1Exp> mingw32-make       
+gcc -Wall -Wextra -g -c main.c
+gcc -Wall -Wextra -g -c hello.c
+gcc -Wall -Wextra -g -c add.c
+gcc main.o hello.o add.o -o final.exe
+PS D:\Visual_Stdio\C_Programming\Makefiles\Makefile_1Exp> .\final.exe
+In main()
+Calling hello()
+Inside hello()
+PID is: 6556
+Calling add()
+Addition result: 8
+Back to main()
+PS D:\Visual_Stdio\C_Programming\Makefiles\Makefile_1Exp>
