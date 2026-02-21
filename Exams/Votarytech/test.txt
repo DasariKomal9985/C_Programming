@@ -9,3 +9,4 @@
 9.) write code for SET CLEAR TOGGLE
 10.) write code for remove dublicate elements from given linked list
 11.) Explain Boot process
+12.) what is printk
